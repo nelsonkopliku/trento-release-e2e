@@ -1,0 +1,19 @@
+name: Release (control)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  release:
+    name: Release
+    uses: trento-project/.github/.github/workflows/git-release.yaml@94dac57211d792dda649383e7f23326b24a9087b
+    with:
+      triggering_branch: ${{ github.ref_name }}
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.E2E_SSH_KEY }}
+      gpg_key: ${{ secrets.E2E_GPG_KEY }}

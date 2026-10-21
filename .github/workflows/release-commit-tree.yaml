@@ -1,0 +1,19 @@
+name: Release (commit-tree)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  release:
+    name: Release
+    uses: nelsonkopliku/trento-dot-github/.github/workflows/git-release.yaml@e2e/commit-tree
+    with:
+      triggering_branch: ${{ github.ref_name }}
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.E2E_SSH_KEY }}
+      gpg_key: ${{ secrets.E2E_GPG_KEY }}
