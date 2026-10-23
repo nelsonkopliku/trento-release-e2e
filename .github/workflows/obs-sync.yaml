@@ -16,6 +16,10 @@ on:
         description: Update the RPM changelog, as in a release.
         type: boolean
         default: false
+      sync_image:
+        description: Sync the container files to the image package trento-web-image.
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -28,7 +32,7 @@ jobs:
     with:
       obs_project: ${{ inputs.target == 'stable' && 'home:nkopliku:trento:e2e:stable' || 'home:nkopliku:trento:e2e:factory' }}
       obs_package: supportutils-plugin-trento
-      obs_image_package: trento-web-image
+      obs_image_package: ${{ inputs.sync_image && 'trento-web-image' || '' }}
       source_ref: ${{ inputs.source_ref }}
       update_changelog: ${{ inputs.update_changelog }}
     secrets:
