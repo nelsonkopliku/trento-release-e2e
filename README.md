@@ -48,3 +48,5 @@ Each run starts from the SAP-trento tips of the fork, and runs the cases in orde
 | S5 | Stable syncs from the tag `7.1.0`: the changes merged before the tag (S5a, S5b) reach stable, in one entry that links both PRs. The change merged after the tag (S5c) stays out. | Like [web#4915](https://github.com/trento-project/web/pull/4915) and [web#4920](https://github.com/trento-project/web/pull/4920), the two changes to the folder between 3.1.6 and 3.2.0: the 3.2.0 release brings both to stable, in one entry that links both. | ✅ [first run](https://github.com/nelsonkopliku/trento-release-e2e/actions/runs/39943761129), [second run](https://github.com/nelsonkopliku/trento-release-e2e/actions/runs/39944008965), PRs [#30](https://github.com/nelsonkopliku/trento-release-e2e/pull/30), [#31](https://github.com/nelsonkopliku/trento-release-e2e/pull/31), [#32](https://github.com/nelsonkopliku/trento-release-e2e/pull/32), [fork commit](https://src.opensuse.org/nkopliku/trento-web-image/commit/8a340b661d9f3ce621cf0ab1e1932c63ca3e49aa3224bc29a964a68cade6d0b0) |
 
 Pull requests #1 to #24 come from earlier runs, and are marked superseded.
+
+S2 change outside the container folder.
