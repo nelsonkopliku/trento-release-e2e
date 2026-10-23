@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.10.1](https://github.com/nelsonkopliku/trento-release-e2e/tree/0.0.0/compare/5.10.0...5.10.1) - 2026-10-23
+
+### What's Changed
+
+* No changes
+
+**Full Changelog**: https://github.com/nelsonkopliku/trento-release-e2e/compare/5.10.0...5.10.1
+
 ## [5.10.0](https://github.com/nelsonkopliku/trento-release-e2e/tree/0.0.0/compare/0.0.0...5.10.0) - 2026-10-23
 
 ### What's Changed
