@@ -59,3 +59,4 @@ RUN set -euo pipefail; sed -i 's/^\([^:]*:[^:]*:\)[^:]*\(:.*\)$/\1\2/' /etc/shad
 EXPOSE 4000/tcp
 ENTRYPOINT ["/usr/lib/trento/bin/trento"]
 # e2e S1
+# e2e S5a
