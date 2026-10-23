@@ -33,3 +33,5 @@ An earlier version of #56 built the merge commit with `git commit-tree`. It pass
 ## Container sync cases
 
 The pull requests of this repository are the cases for the OBS sync of [trento-project/.github#57](https://github.com/trento-project/.github/pull/57). Pull requests #17 to #24 are the final run.
+
+S2 change outside the container folder.
